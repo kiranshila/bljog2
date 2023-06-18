@@ -139,22 +139,22 @@
 
 (defc about []
   (markdown-content
-   (md/page-markdown "about")
+   (@md/page-markdown "about")
    "about"))
 
 (defc hire []
   (markdown-content
-   (md/page-markdown "hire_me")
+   (@md/page-markdown "hire_me")
    "hire"))
 
 (defc open-source []
   (markdown-content
-   (md/page-markdown "open_source")
+   (@md/page-markdown "open_source")
    "open-source"))
 
 (defc publications []
   (markdown-content
-   (md/page-markdown "publications")
+   (@md/page-markdown "publications")
    "publications"))
 
 (defn render [component]

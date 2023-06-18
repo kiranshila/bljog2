@@ -74,7 +74,10 @@
         (doseq [tag ts]
           (swap! markdown-data update-in [:tags tag] conj idx))))))
 
-(defonce page-markdown
-  (->> (md-files "./resources/pages/")
-       (map (fn [{:keys [href] :as page}] [href page]))
-       (into {})))
+(defonce page-markdown (atom {}))
+
+(defn process-page-markdown []
+  (reset! page-markdown
+          (->> (md-files "./resources/pages/")
+               (map (fn [{:keys [href] :as page}] [href page]))
+               (into {}))))
