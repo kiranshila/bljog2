@@ -1,4 +1,3 @@
-.DS_Store
 .idea
 *.log
 tmp/
@@ -20,4 +19,4 @@ pom.xml.asc
 node_modules/
 pnpm-lock.yaml
 resources/public/out.css
-package-lock.json
+Dockerfile
