@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Iosevka Aile Web;
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url(iosevka-aile-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Iosevka Etoile Web;
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url(iosevka-etoile-regular.woff2) format("woff2");
+}
+
+@tailwind base;
+
+@layer base {
+  a {
+    @apply text-sky-50;
+  }
+  a:hover {
+    @apply text-sky-300;
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
