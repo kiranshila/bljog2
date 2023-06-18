@@ -25,6 +25,7 @@ RUN npx tailwindcss -i main.css -o out.css
 
 # Fetch blog posts
 FROM alpine/git as content
+ARG CACHEBUST=1
 RUN git clone --depth=1 -b main https://github.com/kiranshila/blog_posts /posts
 
 # Build prod image
