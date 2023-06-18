@@ -19,3 +19,4 @@ pom.xml.asc
 .clj-kondo
 node_modules/
 pnpm-lock.yaml
+resources/public/out.css
